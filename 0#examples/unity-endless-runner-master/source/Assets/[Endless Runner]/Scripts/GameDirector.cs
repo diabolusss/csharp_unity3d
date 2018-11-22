@@ -10,7 +10,7 @@ namespace EndlessRunner
         [SerializeField]
         private Material[] m_materialColors;
         [SerializeField]
-        private bool m_showDebug;
+        private bool m_showDebug = true;
 
         private Spawner[] m_genericSpawner;
         private int m_bestScore, m_currentScore;
@@ -38,8 +38,10 @@ namespace EndlessRunner
 
         void OnGUI()
         {
-            if (m_showDebug)
-                GUI.Label(new Rect(Screen.width - 200, 20, 200, 100), "ScrollSpeed: " + GlobalVariables.ScrollSpeed);
+			if (m_showDebug) {				
+				GUI.Label (new Rect (Screen.width - 200, 20, 200, 100), "ScrollSpeed: " + GlobalVariables.ScrollSpeed);
+				Debug.Log ("[DBG][GameDirector]: ScrollSpeed= "+GlobalVariables.ScrollSpeed);
+			}
         }
 
         public static Material RandomColor()
