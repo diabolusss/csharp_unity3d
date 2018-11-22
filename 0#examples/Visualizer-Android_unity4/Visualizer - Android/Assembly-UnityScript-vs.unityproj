@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{F1844259-4D39-4055-8121-034A78C19F9A}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_GENERICS;UNITY_ANDROID_API;ENABLE_CLOTH;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_0_1;UNITY_4_0;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Custom Assets\Scripts\ColorChanger.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\DialsController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\EqualizerController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\FloatHum.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\Force Meter\ForceMeterController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\GameGUI.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\HeadsetThermometer.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\HelpBanner.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\HelpGUI.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\LoadingScreen.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\MenuOverlay.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\ModeSwitcher.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\SignalQualityMeter.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\ValueDial.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\VisualizationGUI.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GUI\VisualizerAxes.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\GameController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\HelpController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\LoaderController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\Misc\Headset Physics\Burnable.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\MouseIdleTracker.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\Player\ApplyForce.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\Player\Startup.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\PowerSpectrumController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\PreserveOnReload.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\RawLineController.js" />
+     <Compile Include="Assets\Custom Assets\Scripts\VisualizationController.js" />
+     <None Include="Assets\Custom Assets\Localizations\localization-zh-cn.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Custom Assets\Localizations\localization-ko.txt" />
+     <None Include="Assets\Custom Assets\Localizations\localization-jp.txt" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\main.xml" />
+     <None Include="Assets\recorded_raw.xml" />
+     <None Include="Assets\Custom Assets\Localizations\localization-zh-tw.txt" />
+     <None Include="Assets\Custom Assets\Localizations\localization-en.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="Jayrock">
+ <HintPath>Assets\Plugins\Jayrock.dll</HintPath>
+ </Reference>
+ <Reference Include="Jayrock.Json">
+ <HintPath>Assets\Plugins\Jayrock.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{37FCFB52-6918-BCBE-4D4F-E35948E66F08}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

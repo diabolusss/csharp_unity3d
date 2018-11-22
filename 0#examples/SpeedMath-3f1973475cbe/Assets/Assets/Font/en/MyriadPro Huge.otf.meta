@@ -1,0 +1,13 @@
+fileFormatVersion: 1
+guid: f1a74e8b3940249f0b6f7d3a2d6c7e4c
+TrueTypeFontImporter:
+  importerVersion: 1
+  size: 120
+  case: -2
+  antiAlias: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  style: 0
+  fontNames:
+    name: Myriad Pro
+    name: Arial

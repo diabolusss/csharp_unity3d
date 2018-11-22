@@ -1,0 +1,7 @@
+fileFormatVersion: 1
+guid: 994a20ca8554048f489d77b32f6b3cfe
+MonoImporter:
+  importerVersion: 1
+  defaultReferences:
+    guiHeaderFont: {fileID: 12800000, guid: 285d1d6211ec44b62b07d6fc2ca8bb10, type: 1}
+    descriptionFont: {fileID: 12800000, guid: 7e588acaafce0419f81543877e706b8e, type: 1}

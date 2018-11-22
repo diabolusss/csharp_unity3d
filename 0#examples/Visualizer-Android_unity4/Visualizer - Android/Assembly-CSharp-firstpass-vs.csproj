@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{37FCFB52-6918-BCBE-4D4F-E35948E66F08}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_GENERICS;UNITY_ANDROID_API;ENABLE_CLOTH;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;UNITY_4_0_1;UNITY_4_0;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Attributes.cs" />
+     <Compile Include="Assets\Plugins\BrainwaveDataPlayers\AndroidOutput.cs" />
+     <Compile Include="Assets\Plugins\BrainwaveDataPlayers\FakeMindSetOutput.cs" />
+     <Compile Include="Assets\Plugins\BrainwaveDataPlayers\IBrainwaveDataPlayer.cs" />
+     <Compile Include="Assets\Plugins\ConnectionController.cs" />
+     <Compile Include="Assets\Plugins\CustomTransform.cs" />
+     <Compile Include="Assets\Plugins\DataController.cs" />
+     <Compile Include="Assets\Plugins\DebugOutput.cs" />
+     <Compile Include="Assets\Plugins\Equalizer.cs" />
+     <Compile Include="Assets\Plugins\FloatQueue.cs" />
+     <Compile Include="Assets\Plugins\FramerateLimiter.cs" />
+     <Compile Include="Assets\Plugins\GameHelper.cs" />
+     <Compile Include="Assets\Plugins\GraphBar.cs" />
+     <Compile Include="Assets\Plugins\GraphData.cs" />
+     <Compile Include="Assets\Plugins\LayoutHelper.cs" />
+     <Compile Include="Assets\Plugins\Localizer.cs" />
+     <Compile Include="Assets\Plugins\MeditationSoundController.cs" />
+     <Compile Include="Assets\Plugins\RawLine.cs" />
+     <Compile Include="Assets\Plugins\ThinkGearData.cs" />
+     <Compile Include="Assets\Plugins\UnityThinkGear.cs" />
+     <Compile Include="Assets\Plugins\UserStatus.cs" />
+     <Compile Include="Assets\Plugins\VisualizationParameters.cs" />
+     <Compile Include="Assets\Plugins\WeaponController.cs" />
+     <Compile Include="Assets\Standard Assets\Camera Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Standard Assets\Camera Scripts\MouseOrbit.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\ActivateTrigger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\CombineChildren.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\MeshCombineUtility.cs" />
+     <None Include="Assets\Custom Assets\Localizations\localization-zh-cn.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Custom Assets\Localizations\localization-ko.txt" />
+     <None Include="Assets\Custom Assets\Localizations\localization-jp.txt" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\Plugins\Android\res\layout\main.xml" />
+     <None Include="Assets\recorded_raw.xml" />
+     <None Include="Assets\Custom Assets\Localizations\localization-zh-tw.txt" />
+     <None Include="Assets\Custom Assets\Localizations\localization-en.txt" />
+ <Reference Include="Jayrock">
+ <HintPath>Assets\Plugins\Jayrock.dll</HintPath>
+ </Reference>
+ <Reference Include="Jayrock.Json">
+ <HintPath>Assets\Plugins\Jayrock.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,12 @@
+fileFormatVersion: 1
+guid: fa883892e129847478d3c8f4372d0d50
+TrueTypeFontImporter:
+  importerVersion: 1
+  size: 30
+  case: 0
+  antiAlias: 0
+  includeFontData: 1
+  use2xBehaviour: 1
+  style: 0
+  fontNames:
+    name: Arial

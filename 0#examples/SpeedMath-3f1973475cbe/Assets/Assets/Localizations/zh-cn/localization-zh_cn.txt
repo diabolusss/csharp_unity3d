@@ -1,0 +1,99 @@
+{
+  "connectionpanel": {
+    "connect":      "连接耳机",
+    "disconnect":   "中断耳机连线",
+    "wavequality":  "脑波信号质量",
+    "edemomode":    "使用模拟脑波",
+    "disconnected": "耳机连线已中断",
+    "scanning":     "寻找耳机频道中",
+    "skip":         "跳过此频道",
+    "reconnecting": "等几秒后再试连线",
+    "retry":        "重试中",
+    "stop":         "停止"
+  },
+
+  "game": {
+    "attention":    "专注力",
+    "time":         "时间",
+    "noheadset":    "与耳机未进行成功连接。\n\n请检查耳机状况并重试连接。",
+    "startingin":   "倒数计时",
+    "starttime":    "启动时间",
+    "finished":     "比试完毕\n\让我们看看你的成绩.",
+    "continue":     "继续",
+    "startgame":    "点击下面的按钮开始比试.",
+    "start":        "开始",
+    "score":        "得分",
+    "correct":      "正确答案",
+    "incorrect":    "错误答案",
+    "avgatt":       "平均专注力",
+    "starttime":    "比试时间",
+    "newgame":      "新比试",
+    "viewscores":   "成绩记录",
+    "options":      "选项设置",
+    "restart":      "重新开始",
+    "backmenu":     "返回主菜单",
+    "quit":         "退出",
+    "nodata":       "目前还没有成绩记录。\n\n点击下方按钮重新开始比试或返回主菜单。",
+    "session":      "题目",
+	"about":		"训练说明",
+    "intro":		"尽量快速准确的解答算术问题。解答问题的时候，你的专注水平将会被记录下来。\n\n比试完毕之后，你可以看出自己的专注情况，及需要改进的地方。"
+  },
+
+  "cscpanel": {
+    "connected":    "与脑瑜珈数据库连接成功",
+    "disconnected": "与脑瑜珈数据库成功切离",
+    "connect":      "连接到脑瑜珈数据库",
+    "notfound":     "无法连接上脑瑜珈数据库。请启动脑瑜珈数据库连接程序后再试连接。",
+    "close":        "关闭"
+  },
+
+  "statsnav": {
+    "title" : "操作导航",
+    "mainmenu": "返回主菜单",
+    "delete": "删除记录",
+    "first": "第一轮",
+    "prev": "上一轮",
+    "next": "下一轮",
+    "last": "最后一轮",
+    "start": "开始新一轮",
+    "found": "轮已完成"
+  },
+
+  "options": {
+    "mainmenu":   "返回主菜单",
+    "numheading": "数字设置",
+    "min":        "最小数字",
+    "max":        "最大数字",
+    "opsheading": "运算符设置",
+    "add":        "加法",
+    "subtract":   "减法",
+    "multiply":   "乘法",
+    "divide":     "除法",
+	"gameoptions":	"训练设置",
+	"enablesounds":	"开启训练音效",
+	"gameduration": "游戏持续时间",
+	"back":			"上一步"
+  },
+
+	"levels": {
+		"classic":	"标准训练",
+		"timed":	"限时训练",
+		"grade1":	"一年级程度训练",
+		"grade2":	"二年级程度训练",
+		"grade3":	"三年级程度训练",
+		"grade4":	"四年级程度训练",
+		"grade5":	"五年级程度训练",
+		"custom":	"自定义训练",
+		"numbered":	"固定题数训练",
+		"10Questions": "10 题",
+		"25Questions": "25 题",
+		"50Questions": "50 题",
+		"selectgrade": "请选择您的训练程度",
+		"30seconds":	"30 秒",
+		"1minute":		"1 分钟",
+		"2minute":		"2 分钟",
+		"5minute":		"5 分钟",
+		"10minute":		"10 分钟",
+		"pleaseselect":	"请选择以下限时或者固定题数的训练"
+	}
+}
